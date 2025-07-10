@@ -19,5 +19,5 @@ This repository hosts my **personal portfolio website**, showcasing my academic 
 - [Facebook](https://www.facebook.com/St.Athnasius) |
   [Instagram](https://www.instagram.com/tame_2424) |
   [YouTube](https://www.youtube.com/@Tamey24) |
-  [TikTok](https://www.tiktok.com/@citizens104)# tamene-portfolio
-My personal portfolio website
+  [TikTok](https://www.tiktok.com/@citizens104)
+  
