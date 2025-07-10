@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tamene Yilma | Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1d3557;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      color: #1d3557;
+      border-bottom: 2px solid #457b9d;
+      padding-bottom: 0.5rem;
+    }
+    .timeline {
+      list-style: none;
+      padding: 0;
+    }
+    .timeline li {
+      margin-bottom: 1rem;
+      background: white;
+      padding: 1rem;
+      border-left: 4px solid #457b9d;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #e9ecef;
+      color: #555;
+      font-size: 0.9rem;
+    }
+    .cv-placeholder {
+      color: #888;
+      font-style: italic;
+    }
+    /* New social/contact styles */
+    .contact-section {
+      max-width: 900px;
+      margin: 2rem auto 4rem;
+      padding: 0 1rem;
+      background: white;
+      border: 2px solid #457b9d;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgb(69 123 157 / 0.15);
+    }
+    .contact-section h2 {
+      margin-top: 0;
+      color: #1d3557;
+      border-bottom: 2px solid #457b9d;
+      padding-bottom: 0.5rem;
+    }
+    .social-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 1rem 0 1.5rem 0;
+    }
+    .social-list li {
+      flex: 1 1 160px;
+    }
+    .social-list a {
+      text-decoration: none;
+      color: #1d3557;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: color 0.3s ease;
+    }
+    .social-list a:hover {
+      color: #e63946;
+    }
+    .social-list img {
+      width: 28px;
+      height: 28px;
+    }
+    .contact-info p {
+      font-weight: bold;
+      margin: 6px 0;
+    }
+    .contact-info a {
+      color: #1d3557;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tamene Yilma</h1>
+    <p>Graduate in Accounting & Finance | Portfolio</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
