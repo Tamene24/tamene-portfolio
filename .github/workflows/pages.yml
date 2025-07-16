@@ -1,42 +1,23 @@
-name: Deploy Static Site to GitHub Pages
+name: Pages Build and Deployment
 
 on:
   push:
     branches:
       - main
+    paths:
+      - README.md
+      - .github/workflows/**
 
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  pull_request:
+    branches:
+      - main
+    paths:
+      - README.md
+      - .github/workflows/**
 
 jobs:
-  build:
+  dummy-check:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up GitHub Pages
-        uses: actions/configure-pages@v4
-
-      - name: Upload static site content
-        uses: actions/upload-pages-artifact@v2  # ✅ this is the correct one
-        with:
-          path: .  # change to ./docs if your index.html is in a 'docs' folder
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v3
+      - name: Check README.md
+        run: echo "✅ README.md trigger test passed"
