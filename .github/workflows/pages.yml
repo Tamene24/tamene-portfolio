@@ -1,6 +1,4 @@
-# File: .github/workflows/pages.yml
-
-name: Deploy to GitHub Pages
+name: Deploy Static Site to GitHub Pages
 
 on:
   push:
@@ -20,16 +18,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout your repository
         uses: actions/checkout@v4
 
-      - name: Set up GitHub Pages
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
 
-      - name: Upload static site content
+      - name: Upload static files
         uses: actions/upload-pages-artifact@v2
         with:
-          path: .  # change to ./docs if your site files are in a /docs folder
+          path: .  # or ./docs if your files are inside a 'docs' folder
 
   deploy:
     needs: build
