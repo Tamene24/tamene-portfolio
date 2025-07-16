@@ -100,7 +100,42 @@ html {
     margin-top: 30px;
   }
 }
-<section class="fade-in">
-  <h2>About Me</h2>
-  <p>Finance professional and aspiring data analyst...</p>
-</section>
+
+/* 🔥 Additions below this line 🔥 */
+
+/* Animated background gradient */
+body {
+  background: linear-gradient(-45deg, #f0f8ff, #e6f7ff, #d0e1f9, #f0f8ff);
+  background-size: 400% 400%;
+  animation: gradientFlow 15s ease infinite;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slide-in animation */
+.slide-in {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.6s ease-out;
+}
+
+.slide-in.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
