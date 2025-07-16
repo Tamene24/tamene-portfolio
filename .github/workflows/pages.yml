@@ -1,23 +1,43 @@
-name: Pages Build and Deployment
+# .github/workflows/pages.yml
+name: Build and Deploy to GitHub Pages
 
 on:
   push:
     branches:
       - main
-    paths:
-      - README.md
-      - .github/workflows/**
 
-  pull_request:
-    branches:
-      - main
-    paths:
-      - README.md
-      - .github/workflows/**
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  dummy-check:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check README.md
-        run: echo "✅ README.md trigger test passed"
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: .  # assumes index.html is in root
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v3
