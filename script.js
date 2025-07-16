@@ -13,3 +13,16 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(el);
   });
 });
+// Typing animation
+const text = "Tamene Yilma";
+const typingEl = document.getElementById("typing-text");
+
+let i = 0;
+function typeWriter() {
+  if (i < text.length) {
+    typingEl.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 150);
+  }
+}
+typeWriter();
