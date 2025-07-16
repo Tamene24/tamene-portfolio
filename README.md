@@ -91,7 +91,6 @@ Finance professional and aspiring data analyst with a solid academic foundation 
 ## 🎥 Portfolio Demo
 
 ![Portfolio Demo](./portfolio-demo.gif)  
-*Add your portfolio demo GIF here for a dynamic preview!*
 
 ---
 
