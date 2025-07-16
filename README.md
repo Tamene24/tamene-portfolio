@@ -1,4 +1,4 @@
-# Tamene Yilma
+# Tamene Yilma 🚀
 
 👋 **Welcome**
 
@@ -17,10 +17,10 @@ Finance professional and aspiring data analyst with a solid academic foundation 
 
 ## 📱 Social Media
 
-- [![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/St.Athnasius)
-- [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/tame_2424)
-- [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@Tamey24)
-- [![TikTok](https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://www.tiktok.com/@citizens104)
+[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/St.Athnasius)  
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/tame_2424)  
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@Tamey24)  
+[![TikTok](https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://www.tiktok.com/@citizens104)
 
 ---
 
@@ -34,14 +34,13 @@ Finance professional and aspiring data analyst with a solid academic foundation 
 
 ---
 
-## 🖥️ Technical & Data Analytics
+## 🖥️ Technical & Data Analytics Skills
 
-- Microsoft Excel (Advanced)  
-- SQL  
-- Power BI (Intermediate)  
-- Financial Reporting & Forecasting  
-- HTML & CSS (Basic)  
-- Budgeting and Operational Efficiency  
+![Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=flat&logo=microsoft-excel&logoColor=white)  
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=sql&logoColor=white)  
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat&logo=power-bi&logoColor=black)  
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)  
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)  
 
 ---
 
@@ -86,6 +85,13 @@ Finance professional and aspiring data analyst with a solid academic foundation 
 - Guragigna (Fluent)  
 - English (Advanced)  
 - Ge’ez (Liturgical / Religious Use)  
+
+---
+
+## 🎥 Portfolio Demo
+
+![Portfolio Demo](./portfolio-demo.gif)  
+*Add your portfolio demo GIF here for a dynamic preview!*
 
 ---
 
