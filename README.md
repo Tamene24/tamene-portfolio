@@ -96,3 +96,5 @@ Finance professional and aspiring data analyst with a solid academic foundation 
 ---
 
 © 2025 Tamene Yilma. All rights reserved.
+
+<!-- Trigger GitHub Actions for README.md -->
