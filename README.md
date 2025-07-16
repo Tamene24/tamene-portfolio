@@ -2,7 +2,7 @@
 
 ---
 
-## 👋 Welcome
+ 👋 Welcome
 
 Finance professional and aspiring data analyst with a solid academic foundation in accounting and finance, and practical experience across financial operations and managerial roles. Skilled in financial reporting, budgeting, and data visualization. Known for blending analytical insight with strong leadership, aiming to drive performance and data-informed decision-making in business environments.
 
@@ -17,7 +17,7 @@ Finance professional and aspiring data analyst with a solid academic foundation 
 
 ---
 
-## 📱 Social Media
+ 📱 Social Media
 
 [Facebook](https://www.facebook.com/St.Athnasius) • 
 [Instagram](https://www.instagram.com/tame_2424) • 
@@ -26,7 +26,7 @@ Finance professional and aspiring data analyst with a solid academic foundation 
 
 ---
 
-## 🧠 Skills
+ 🧠 Skills
 
 - Analytical Thinking  
 - Communication  
@@ -37,7 +37,7 @@ Finance professional and aspiring data analyst with a solid academic foundation 
 
 ---
 
-## 💬 Languages
+ 💬 Languages
 
 - Amharic (Native)  
 - Guragigna (Fluent)  
@@ -46,7 +46,7 @@ Finance professional and aspiring data analyst with a solid academic foundation 
 
 ---
 
-## 💼 Work Experience
+ 💼 Work Experience
 
 ### General Manager  
 **Nimaje Real Estate, Addis Ababa** | 2024 – Present  
@@ -55,14 +55,14 @@ Finance professional and aspiring data analyst with a solid academic foundation 
 • Implementing data-driven decision-making for business growth  
 
 ### Finance Officer  
-**SAFI Trade and Manufacturing, Addis Ababa** | 2021 – 2023  
+**SAEL Manufacturing and Trade, Addis Ababa** | 2021 – 2023  
 • Managed financial reporting, budgeting, and auditing  
 • Conducted variance analysis and financial forecasting  
 • Supported external audits and improved internal processes  
 
 ---
 
-## 🖥️ Technical & Data Analytics Skills
+ 🖥️ Technical & Data Analytics Skills
 
 - Microsoft Excel (Advanced)  
 - SQL  
@@ -73,7 +73,7 @@ Finance professional and aspiring data analyst with a solid academic foundation 
 
 ---
 
-## 🎓 Education
+ 🎓 Education
 
 **Master of Business Administration in Accounting and Finance**  
 St. Mary's University  
@@ -85,7 +85,7 @@ BST College
 
 ---
 
-## 📘 Key Courses
+ 📘 Key Courses
 
 - Advanced Financial Accounting  
 - Advanced Business Taxation  
@@ -94,7 +94,7 @@ BST College
 
 ---
 
-## 🧾 Reference
+ 🧾 Reference
 
 **Asmamaw Gete (PhD)**  
 Addis Ababa  
