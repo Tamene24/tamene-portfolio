@@ -18,16 +18,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup GitHub Pages
+      - name: Set up GitHub Pages
         uses: actions/configure-pages@v4
 
-      - name: Upload static files
-        uses: actions/upload-pages-artifact@v2
+      - name: Upload static site content
+        uses: actions/upload-pages-artifact@v2  # ✅ this is the correct one
         with:
-          path: .  # or ./docs if your files are inside a 'docs' folder
+          path: .  # change to ./docs if your index.html is in a 'docs' folder
 
   deploy:
     needs: build
