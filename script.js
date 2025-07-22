@@ -1,37 +1,53 @@
-<script>
 document.addEventListener("DOMContentLoaded", () => {
   const titles = ["Tamene Yilma", "Data Analyst", "Financial Accountant"];
-  const typingEl = document.getElementById("typing-text");
+  const typingTarget = document.getElementById("dynamic-typing");
+  const headerTyping = document.getElementById("typing-text-header");
 
   let titleIndex = 0;
   let charIndex = 0;
-  let typing = true;
+  let isTyping = true;
 
-  function type() {
-    const current = titles[titleIndex];
+  function typeEffect() {
+    const currentText = titles[titleIndex];
 
-    if (typing) {
-      if (charIndex < current.length) {
-        typingEl.textContent += current.charAt(charIndex);
+    if (isTyping) {
+      if (charIndex < currentText.length) {
+        typingTarget.textContent += currentText.charAt(charIndex);
         charIndex++;
-        setTimeout(type, 120);
+        setTimeout(typeEffect, 100);
       } else {
-        typing = false;
-        setTimeout(type, 1200); // pause before deleting
+        isTyping = false;
+        setTimeout(typeEffect, 1500); // pause after full text
       }
     } else {
       if (charIndex > 0) {
-        typingEl.textContent = current.substring(0, charIndex - 1);
+        typingTarget.textContent = currentText.substring(0, charIndex - 1);
         charIndex--;
-        setTimeout(type, 60);
+        setTimeout(typeEffect, 50);
       } else {
-        typing = true;
+        isTyping = true;
         titleIndex = (titleIndex + 1) % titles.length;
-        setTimeout(type, 500); // pause before typing next
+        setTimeout(typeEffect, 500); // pause before new word
       }
     }
   }
 
-  type();
+  // Start animation
+  typeEffect();
+
+  // Optional: Typing animation for header once
+  const headerText = "Welcome to my portfolio";
+  let headerIndex = 0;
+
+  function typeHeader() {
+    if (headerIndex < headerText.length) {
+      headerTyping.textContent += headerText.charAt(headerIndex);
+      headerIndex++;
+      setTimeout(typeHeader, 80);
+    }
+  }
+
+  // Clear and animate header once
+  headerTyping.textContent = "";
+  typeHeader();
 });
-</script>
