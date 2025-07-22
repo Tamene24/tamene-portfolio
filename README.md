@@ -8,7 +8,7 @@ Finance professional and aspiring data analyst with a solid academic foundation 
 
 ## 🌐 Contact
 
-- 📞 +251-913 3040 37  
+- 📞 +251913304037  
 - 📧 Tameneyilma911@gmail.com  
 - 📍 Addis Ababa, Ethiopia  
 - 🌍 [tamene24.github.io/tamene-portfolio](https://tamene24.github.io/tamene-portfolio)
