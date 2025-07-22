@@ -1,109 +1,90 @@
-/* ================================
-   Root Variables for Light & Dark
-=================================== */
-:root {
-  --bg-color: #f9f9f9;
-  --text-color: #2c3e50;
-  --header-bg: #2c3e50;
-  --link-color: white;
-  --nav-hover: #1a252f;
-}
-
-/* ====================
-   Dark Mode Overrides
-======================= */
-body.dark-mode {
-  --bg-color: #121212;
-  --text-color: #f0f0f0;
-  --header-bg: #1f1f1f;
-  --link-color: #f0f0f0;
-  --nav-hover: #333;
-}
-
-/* ===============
-   Base Styles
-================== */
-body {
-  font-family: Arial, sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  max-width: 900px;
-  margin: auto;
-  padding: 0 20px 60px;
-  line-height: 1.6;
-  font-size: 18px;
-
-  /* Animated gradient background */
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+  padding: 20px;
   background: linear-gradient(-45deg, #f0f8ff, #e6f7ff, #d0e1f9, #f0f8ff);
   background-size: 400% 400%;
   animation: gradientFlow 15s ease infinite;
+  color: var(--text-color);
 }
 
-/* ===============
-   Header Styles
-================== */
-header {
-  background-color: var(--header-bg);
-  padding: 15px 20px;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-header h1 {
-  color: white;
-  margin: 0;
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-/* ====================
-   Navigation Menu
-======================= */
-nav {
-  margin-top: 10px;
+.hero-content {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
+  flex-direction: column;
+  align-items: center;
 }
 
-nav a {
-  color: var(--link-color);
-  text-decoration: none;
+/* Profile Picture */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+/* Headings */
+.hero-content h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.typing-text {
+  font-size: 28px;
   font-weight: bold;
-  padding: 6px 12px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+  font-family: 'Courier New', monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid var(--text-color);
+  width: fit-content;
+  margin: auto;
 }
 
-nav a:hover {
-  background-color: var(--nav-hover);
+/* Blinking Cursor */
+.typing-text::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 24px;
+  background-color: var(--text-color);
+  margin-left: 4px;
+  animation: blink 0.8s steps(2, start) infinite;
 }
 
-/* ====================
-   Section Layout
-======================= */
-section {
-  margin-top: 40px;
-  padding: 0 10px;
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
-section:nth-of-type(even) {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+/* Background Animation */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-/* ====================
-   Social Media Icons
-======================= */
-.social-icons a {
-  font-size: 20px;
-  margin-right: 15px;
+/* Responsive */
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .typing-text {
+    font-size: 20px;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+}  margin-right: 15px;
   text-decoration: none;
 }
 
