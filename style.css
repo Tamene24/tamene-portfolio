@@ -1,4 +1,26 @@
-/* Hero Section */
+:root {
+  --text-color: #2c3e50;
+  --primary-color: #0077cc;
+  --background-light: #f0f8ff;
+  --background-dark: #d0e1f9;
+}
+
+/* ====== Reset ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--background-light);
+  color: var(--text-color);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* ====== Hero Section ====== */
 .hero {
   display: flex;
   justify-content: center;
@@ -6,7 +28,7 @@
   text-align: center;
   height: 90vh;
   padding: 20px;
-  background: linear-gradient(-45deg, #f0f8ff, #e6f7ff, #d0e1f9, #f0f8ff);
+  background: linear-gradient(-45deg, var(--background-light), #e6f7ff, var(--background-dark), var(--background-light));
   background-size: 400% 400%;
   animation: gradientFlow 15s ease infinite;
   color: var(--text-color);
@@ -28,7 +50,7 @@
   margin-bottom: 20px;
 }
 
-/* Headings */
+/* Hero Headings */
 .hero-content h1 {
   font-size: 32px;
   font-weight: 600;
@@ -36,31 +58,101 @@
   color: var(--text-color);
 }
 
-.typing-text {
+/* Dynamic Typing Text */
+#dynamic-typing {
   font-size: 28px;
   font-weight: bold;
   font-family: 'Courier New', monospace;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid var(--text-color);
+  border-right: 3px solid var(--primary-color);
   width: fit-content;
   margin: auto;
+  padding-right: 5px;
+  color: var(--primary-color);
 }
 
 /* Blinking Cursor */
-.typing-text::after {
+#dynamic-typing::after {
   content: "";
   display: inline-block;
   width: 8px;
-  height: 24px;
+  height: 28px;
+  background-color: var(--primary-color);
+  margin-left: 4px;
+  animation: blink 0.8s steps(2, start) infinite;
+}
+
+/* Header typing text */
+#typing-text-header {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-color);
+  min-height: 2.5rem;
+  border-right: 3px solid var(--text-color);
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 5px;
+  margin-bottom: 20px;
+}
+
+#typing-text-header::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 2rem;
   background-color: var(--text-color);
   margin-left: 4px;
   animation: blink 0.8s steps(2, start) infinite;
 }
 
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+/* Navigation */
+header {
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+header nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav a:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Dark Mode Toggle Button */
+#toggle-dark {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#toggle-dark:hover {
+  background-color: #005fa3;
 }
 
 /* Background Animation */
@@ -70,40 +162,76 @@
   100% { background-position: 0% 50%; }
 }
 
-/* Responsive */
+/* Blinking Cursor Keyframes */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ====================
+   Animation: Fade-in
+======================= */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ====================
+   Animation: Slide-in
+======================= */
+.slide-in {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.6s ease-out;
+}
+
+.slide-in.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ============================
+   Mobile Responsiveness
+=============================== */
 @media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 0 12px 40px;
+  }
+
   .hero-content h1 {
     font-size: 24px;
   }
 
-  .typing-text {
+  #dynamic-typing {
     font-size: 20px;
+  }
+
+  #typing-text-header {
+    font-size: 1.5rem;
   }
 
   .profile-pic {
     width: 120px;
     height: 120px;
   }
-}  margin-right: 15px;
-  text-decoration: none;
-}
 
-/* ====================
-   Smooth Scrolling
-======================= */
-html {
-  scroll-behavior: smooth;
-}
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 
-/* ====================
-   Animation: Gradient
-======================= */
-@keyframes gradientFlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  header nav a {
+    padding: 8px 12px;
+  }
 }
-
 /* ====================
    Animation: Fade-in
 ======================= */
